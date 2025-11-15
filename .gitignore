@@ -1,11 +1,21 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-.env
+*.py[cod]
+*$py.class
 
-# Data
-/data/
-/results/
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
 
-# Notebooks checkpoints
-.ipynb_checkpoints/
+# Virtual environment
+.env/
+venv/
+
+# Data files
+data/
+
+# Environment files
+environment.yml
+requirements.txt
+
+# macOS
+.DS_Store

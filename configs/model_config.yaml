@@ -1,4 +1,0 @@
-# Model config placeholder
-model:
-  type: random_forest
-  n_estimators: 100
