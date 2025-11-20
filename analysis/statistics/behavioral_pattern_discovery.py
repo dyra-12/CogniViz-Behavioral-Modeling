@@ -7,7 +7,7 @@ produce per-task correlations, save CSV tables, produce heatmap and boxplots
 for top features, write APA-style interpretations, and zip figures for download.
 
 Usage:
-    python behavioral_pattern_discovery.py --csv /path/to/modeling_dataset_ultrarealistic.csv --out /path/to/output_dir
+    python behavioral_pattern_discovery.py --csv /path/to/modeling_dataset.csv --out /path/to/output_dir
 
 Outputs (default saved under ./analysis/behavioral_patterns/):
  - feature_correlation_matrix_pearson.csv
@@ -165,7 +165,7 @@ def run(csv_path, out_dir):
 
 def main():
     parser = argparse.ArgumentParser(description='Behavioral Pattern Discovery analysis')
-    parser.add_argument('--csv', type=str, default='/mnt/data/modeling_dataset_ultrarealistic.csv', help='Path to modeling CSV')
+    parser.add_argument('--csv', type=str, default='/mnt/data/modeling_dataset.csv', help='Path to modeling CSV')
     parser.add_argument('--out', type=str, default='/mnt/data/analysis/behavioral_patterns', help='Output folder')
     args = parser.parse_args()
     res = run(args.csv, args.out)
@@ -174,5 +174,4 @@ def main():
         print(f' - {k}: {v}')
 
 if __name__ == '__main__':
-    import argparse
     main()

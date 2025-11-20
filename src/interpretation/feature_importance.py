@@ -9,7 +9,7 @@ Extracts feature importances from the tuned Random Forest model and saves:
 Usage:
     python feature_importance.py \
         --model ../../models/tuned_random_forest_model.joblib \
-        --csv ../../data/processed/modeling_dataset_ultrarealistic.csv \
+        --csv ../../data/processed/modeling_dataset.csv \
         --outdir ../../results/interpretation
 """
 

@@ -12,7 +12,7 @@ Usage:
     python shap_clustering.py \
         --shap-values ../../results/interpretation/shap_values.npy \
         --features ../../results/interpretation/shap_feature_names.json \
-        --csv ../../data/processed/modeling_dataset_ultrarealistic.csv \
+        --csv ../../data/processed/modeling_dataset.csv \
         --outdir ../../results/interpretation
 """
 

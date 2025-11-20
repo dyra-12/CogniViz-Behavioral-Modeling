@@ -135,7 +135,7 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, default="../../models/tuned_random_forest_model.joblib")
-    parser.add_argument("--csv", type=str, default="../../data/processed/modeling_dataset_ultrarealistic.csv")
+    parser.add_argument("--csv", type=str, default="../../data/processed/modeling_dataset.csv")
     parser.add_argument("--outdir", type=str, default="../../results/modeling")
     args = parser.parse_args()
 

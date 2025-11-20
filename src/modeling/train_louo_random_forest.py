@@ -8,7 +8,7 @@ train_louo_random_forest.py
 4) Saves model and results to models/ and results/
 
 Usage:
-    python train_louo_random_forest.py --csv ../../data/processed/modeling_dataset_ultrarealistic.csv --model-out ../../models/tuned_random_forest_model.joblib
+    python train_louo_random_forest.py --csv ../../data/processed/modeling_dataset.csv --model-out ../../models/tuned_random_forest_model.joblib
 """
 
 import os
@@ -48,7 +48,7 @@ def build_pipeline_from_params(params, random_state=2025):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--csv", type=str, default="../../data/processed/modeling_dataset_ultrarealistic.csv")
+    parser.add_argument("--csv", type=str, default="../../data/processed/modeling_dataset.csv")
     parser.add_argument("--model-out", type=str, default="../../models/tuned_random_forest_model.joblib")
     parser.add_argument("--results-outdir", type=str, default="../../results/modeling")
     parser.add_argument("--do-search", action="store_true", help="Run grouped hyperparameter search before training")

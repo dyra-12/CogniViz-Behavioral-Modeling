@@ -54,7 +54,7 @@ def run_anova(csv_path, out_dir):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--csv', type=str, default='./data/processed/modeling_dataset_ultrarealistic.csv')
+    parser.add_argument('--csv', type=str, default='./data/processed/modeling_dataset.csv')
     parser.add_argument('--out-dir', type=str, default='./analysis/results')
     args = parser.parse_args()
     run_anova(args.csv, args.out_dir)

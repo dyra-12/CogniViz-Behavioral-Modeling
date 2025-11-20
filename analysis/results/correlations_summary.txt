@@ -1,0 +1,32 @@
+Feature correlations summary
+============================================================
+
+Features analyzed (present):
+scheduling_difficulty, constraint_violation_rate, budget_management_stress, multitasking_load, drag_attempts, recovery_efficiency, form_efficiency, form_hesitation_index, mouse_entropy_avg, filter_optimization_score, planning_time_ratio, rapid_hovers, action_density, idle_time_ratio, exploration_breadth, decision_uncertainty
+
+Missing features (not in CSV):
+
+
+Top correlations (absolute value):
+                  feature  pearson_r      p_value direction  n  rank
+    scheduling_difficulty   0.806616 2.449000e-18  positive 75   1.0
+constraint_violation_rate   0.803345 4.244861e-18  positive 75   2.0
+ budget_management_stress   0.798239 9.815831e-18  positive 75   3.0
+        multitasking_load   0.706317 1.451835e-12  positive 75   4.0
+            drag_attempts   0.663771 8.546398e-11  positive 75   5.0
+      recovery_efficiency  -0.618090 3.459285e-09  negative 75   6.0
+          form_efficiency  -0.584846 3.592421e-08  negative 75   7.0
+    form_hesitation_index  -0.533083 8.488532e-07  negative 75   8.0
+        mouse_entropy_avg   0.519470 1.791900e-06  positive 75   9.0
+filter_optimization_score  -0.417840 1.914889e-04  negative 75  10.0
+      planning_time_ratio   0.376999 8.560743e-04  positive 75  11.0
+             rapid_hovers   0.196241 9.152579e-02  positive 75  12.0
+          idle_time_ratio   0.107046 3.606630e-01  positive 75  13.0
+           action_density   0.091807 4.334063e-01  positive 75  14.0
+     decision_uncertainty  -0.074727 5.240121e-01  negative 75  15.0
+      exploration_breadth   0.019774 8.662793e-01  positive 75  16.0
+
+Full CSVs saved to:
+- analysis/results/correlations_summary.csv
+- analysis/results/taskwise_feature_correlations.csv
+- analysis/results/correlation_heatmap.png

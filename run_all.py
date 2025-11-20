@@ -51,7 +51,7 @@ SHAP_CLUSTER = SRC_DIR / "interpretation" / "shap_clustering.py"
 FI_SCRIPT = SRC_DIR / "interpretation" / "feature_importance.py"
 
 # Files
-MODELING_CSV = PROCESSED_DIR / "modeling_dataset_ultrarealistic.csv"
+MODELING_CSV = PROCESSED_DIR / "modeling_dataset.csv"
 GRID_OUT = MODELS_DIR / "rf_grid_search.joblib"
 MODEL_OUT = MODELS_DIR / "tuned_random_forest_model.joblib"
 

@@ -1,0 +1,13 @@
+feature,pearson_r,p_value,direction,rank
+scheduling_difficulty,0.806616,2.449e-18,positive,1
+constraint_violation_rate,0.803345,4.244861e-18,positive,2
+budget_management_stress,0.798239,9.815831e-18,positive,3
+multitasking_load,0.732570,1.755512e-13,positive,4
+drag_attempts,0.663771,8.546398e-11,positive,5
+recovery_efficiency,-0.61809,3.459285e-09,negative,6
+form_efficiency,-0.584846,3.592421e-08,negative,7
+form_hesitation_index,-0.533083,8.488532e-07,negative,8
+mouse_entropy_avg,0.532151,1.063193e-06,positive,9
+filter_optimization_score,-0.424735,1.621047e-04,negative,10
+planning_time_ratio,0.376999,8.560743e-04,positive,11
+rapid_hovers,0.196241,9.152579e-02,positive_ns,12

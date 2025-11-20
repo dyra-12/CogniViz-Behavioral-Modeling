@@ -159,5 +159,5 @@ Use these walkthroughs to:
 ---
 
 **Last Updated**: November 2025  
-**Maintainer**: Thesis Project Team  
+**Maintainer**: Dyuti Dasmahapatra 
 **License**: Research Use Only

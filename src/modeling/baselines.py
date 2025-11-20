@@ -119,7 +119,7 @@ def run_baselines_louo(df: pd.DataFrame, feature_cols: List[str], group_col: str
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--csv", type=str, default="../../data/processed/modeling_dataset_ultrarealistic.csv")
+    parser.add_argument("--csv", type=str, default="../../data/processed/modeling_dataset.csv")
     parser.add_argument("--outdir", type=str, default="../../results/modeling")
     args = parser.parse_args()
 

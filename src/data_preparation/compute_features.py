@@ -8,10 +8,10 @@ and produces the modeling CSV with engineered features. If the raw JSON contains
 Otherwise, the script computes features from events.
 
 Outputs:
- - ./data/processed/modeling_dataset_ultrarealistic.csv
+ - ./data/processed/modeling_dataset.csv
 
 Usage:
-    python compute_features.py --raw-dir ../../data/raw_matching_dataset --out-csv ../../data/processed/modeling_dataset_ultrarealistic.csv
+    python compute_features.py --raw-dir ../../data/raw_matching_dataset --out-csv ../../data/processed/modeling_dataset.csv
 """
 
 import os
@@ -156,7 +156,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--raw-dir", type=str, default="../../data/raw_matching_dataset",
                         help="Directory containing raw JSONs")
-    parser.add_argument("--out-csv", type=str, default="../../data/processed/modeling_dataset_ultrarealistic.csv",
+    parser.add_argument("--out-csv", type=str, default="../../data/processed/modeling_dataset.csv",
                         help="Output CSV path")
     args = parser.parse_args()
 

@@ -8,7 +8,7 @@ Performs hyperparameter tuning for RandomForestClassifier using grouped CV
 Saves best parameters to JSON and returns best estimator.
 
 Usage:
-    python hyperparameter_search.py --csv ../../data/processed/modeling_dataset_ultrarealistic.csv --out models/rf_tuned_params.json
+    python hyperparameter_search.py --csv ../../data/processed/modeling_dataset.csv --out models/rf_tuned_params.json
 """
 
 import os
@@ -50,7 +50,7 @@ def run_grouped_grid_search(df, feature_cols, group_col="participantId", n_jobs=
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--csv", type=str, default="../../data/processed/modeling_dataset_ultrarealistic.csv")
+    parser.add_argument("--csv", type=str, default="../../data/processed/modeling_dataset.csv")
     parser.add_argument("--out", type=str, default="../../models/rf_grid_search.joblib")
     parser.add_argument("--n-jobs", type=int, default=1)
     args = parser.parse_args()

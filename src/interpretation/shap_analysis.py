@@ -11,7 +11,7 @@ Compute SHAP values for the tuned Random Forest model and save:
 Usage:
     python shap_analysis.py \
         --model ../../models/tuned_random_forest_model.joblib \
-        --csv ../../data/processed/modeling_dataset_ultrarealistic.csv \
+        --csv ../../data/processed/modeling_dataset.csv \
         --outdir ../../results/interpretation
 """
 

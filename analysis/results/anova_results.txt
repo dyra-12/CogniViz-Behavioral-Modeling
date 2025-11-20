@@ -1,0 +1,28 @@
+Repeated-Measures ANOVA on NASA-TLX
+============================================================
+
+Descriptive statistics by task:
+                count    mean        std   min   25%   50%   75%   max
+task_id                                                               
+task_1_form      25.0  31.528   9.351137  13.3  26.7  30.0  36.7  51.7
+task_2_product   25.0  45.604  15.090325  20.0  33.3  45.0  56.7  78.3
+task_3_travel    25.0  66.528  11.705466  38.3  58.3  66.7  76.7  83.3
+
+ANOVA results:
+                Anova
+=====================================
+        F Value Num DF  Den DF Pr > F
+-------------------------------------
+task_id 63.2729 2.0000 48.0000 0.0000
+=====================================
+
+
+
+Pairwise paired t-tests (Bonferroni corrected):
+Number of comparisons = 3. Bonferroni alpha = 0.05/3 = 0.01667
+
+task_1_form vs task_2_product: t = -4.2547, p = 2.7633e-04, p_bonf = 8.2899e-04
+task_1_form vs task_3_travel: t = -15.8690, p = 3.1655e-14, p_bonf = 9.4965e-14
+task_2_product vs task_3_travel: t = -5.6734, p = 7.6455e-06, p_bonf = 2.2937e-05
+
+Note: Paired t-tests require participants to have TLX in both tasks.
