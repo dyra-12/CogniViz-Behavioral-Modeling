@@ -5,7 +5,7 @@ run_all.py
 Orchestrator to run the complete pipeline end-to-end.
 
 Steps:
- 1. generate_synthetic_data.py  (--raw-matching)
+ 1. generate_data.py            (--raw-matching)
  2. compute_features.py         (recreate modeling CSV from raw matching)
  3. baselines.py                (majority + logistic under LOUO)
  4. hyperparameter_search.py    (optional; Leave-One-Group-Out grid search)
@@ -40,8 +40,7 @@ RESULTS_DIR = REPO_ROOT / "results"
 INTERP_RESULTS_DIR = RESULTS_DIR / "interpretation"
 LOGS_DIR = REPO_ROOT / "logs"
 
-# Script paths
-GEN_SCRIPT = SRC_DIR / "data_preparation" / "generate_synthetic_data.py"
+GEN_SCRIPT = SRC_DIR / "data_preparation" / "generate_data.py"
 COMPUTE_SCRIPT = SRC_DIR / "data_preparation" / "compute_features.py"
 BASELINE_SCRIPT = SRC_DIR / "modeling" / "baselines.py"
 HYPER_SCRIPT = SRC_DIR / "modeling" / "hyperparameter_search.py"
@@ -102,9 +101,9 @@ def main(args):
 
     py = sys.executable  # use same python executable
 
-    # 1) Generate synthetic data (CSV + raw matching)
+    # 1) Generate data (CSV + raw matching)
     if not args.skip_generate:
-        logging.info("STEP 1: Generating synthetic modeling CSV and raw-matching JSONs")
+        logging.info("STEP 1: Generating modeling CSV and raw-matching JSONs")
         cmd = [
             py,
             str(GEN_SCRIPT),
@@ -214,10 +213,10 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run the full pipeline end-to-end.")
-    parser.add_argument("--n-participants", type=int, default=25, help="Number of synthetic participants to create")
+    parser.add_argument("--n-participants", type=int, default=25, help="Number of participants to create")
     parser.add_argument("--do-search", action="store_true", help="Run grouped hyperparameter search before training")
     parser.add_argument("--n-jobs", type=int, default=1, help="Parallel jobs for grid search")
-    parser.add_argument("--skip-generate", dest="skip_generate", action="store_true", help="Skip synthetic data generation")
+    parser.add_argument("--skip-generate", dest="skip_generate", action="store_true", help="Skip data generation")
     parser.add_argument("--skip-compute", dest="skip_compute", action="store_true", help="Skip feature computation step")
     parser.add_argument("--skip-baselines", dest="skip_baselines", action="store_true", help="Skip baseline evaluation")
     parser.add_argument("--no-search", dest="do_search", action="store_false", help="Alias to skip search")

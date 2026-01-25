@@ -42,9 +42,10 @@ python -m ipykernel install --user --name cogniviz --display-name "CogniViz (.ve
 
 ## 3) Data Inputs
 
+
 CogniViz supports two common modes:
 
-1. **Synthetic / demo reproduction** (recommended for reviewers): the pipeline can generate synthetic modeling data and “raw-matching” JSONs and then recompute features from those.
+1. **Demo reproduction** (recommended for reviewers): the pipeline can generate modeling data and “raw-matching” JSONs and then recompute features from those.
 2. **Real dataset reproduction** (if you have access): place raw files under `data/raw/` and ensure the processed CSV exists under `data/processed/`.
 
 The dataset format and feature definitions are documented in:
@@ -59,15 +60,16 @@ Run the full pipeline:
 python run_all.py
 ```
 
+
 Notes:
 
-- By default, `run_all.py` generates synthetic data for `--n-participants 25` and writes `data/processed/modeling_dataset.csv`.
+- By default, `run_all.py` generates data for `--n-participants 25` and writes `data/processed/modeling_dataset.csv`.
 - It then trains/evaluates models with Leave-One-User-Out (LOUO), generates SHAP artifacts, and saves results under `results/`.
 
 Optional flags (see `python run_all.py --help`):
 
 - `--do-search` to run the grouped hyperparameter search before training.
-- `--skip-generate` to skip synthetic generation (useful if you already have `data/processed/modeling_dataset.csv`).
+- `--skip-generate` to skip data generation (useful if you already have `data/processed/modeling_dataset.csv`).
 - `--skip-compute` to skip recomputing features from raw.
 
 ## 5) Statistical Analyses (NASA-TLX)
