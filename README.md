@@ -1,14 +1,6 @@
-# CogniViz
+# CogniViz: Interpretable, Sensor-Free Cognitive Load Inference for Adaptive Interfaces
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)  
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com/)  
-[![React](https://img.shields.io/badge/React-18+-61DAFB.svg)](https://react.dev/)
-
-## Interpretable, Sensor-Free Cognitive Load Inference for Adaptive Interfaces
-
-replace the repo names
----
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/) [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)](https://fastapi.tiangolo.com/) [![React](https://img.shields.io/badge/React-18+-61DAFB.svg)](https://react.dev/)
 
 *A browser-native research framework for inferring cognitive load from natural interaction behavior and enabling explanation-driven, human-centered interface adaptation.*
 
