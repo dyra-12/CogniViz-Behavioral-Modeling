@@ -40,6 +40,19 @@ By uniting behavioral modeling, explainable machine learning, and adaptive inter
 - [`INSIGHTS_AND_STORYTELLING.md`](INSIGHTS_AND_STORYTELLING.md) — Narrative synthesis and design meaning  
 - [`SYSTEM.md`](SYSTEM.md) — Deployment and runtime architecture  
 - [`ETHICS.md`](ETHICS.md) — Privacy, agency, consent, and responsible use  
+- [`demo_screenshots/`](demo_screenshots/) — Demo UI screenshots  
+
+---
+
+## Demo Screenshots
+
+The demo screenshots in `demo_screenshots/` provide visual examples of how CogniViz surfaces cognitive load and drives adaptive UI behavior across the three study tasks.
+
+- `cogniviz_task1_*.png` — Form completion (low/medium load, hesitation and calibration states)
+- `cogniviz_task2_*.png` — Product exploration (comparison support and medium-load exploration)
+- `cogniviz_task3_*.png` — Travel planning (medium/high load, constraint and planning pressure)
+
+Use these images alongside the task scenarios and adaptation logic to ground the abstract modeling pipeline in concrete interface states and breakdown–repair patterns.
 
 ---
 

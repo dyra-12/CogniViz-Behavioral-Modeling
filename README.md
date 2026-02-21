@@ -136,6 +136,7 @@ Additional technical documents:
 - `docs/ADAPTATION.md` — UI logic + HCI theory  
 - `docs/SYSTEM.md` — Deployment + runtime  
 - `ETHICS.md` — Privacy, agency, consent  
+ - `docs/demo_screenshots/` — Demo UI screenshots  
 
 ---
 
