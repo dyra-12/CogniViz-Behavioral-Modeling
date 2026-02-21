@@ -117,6 +117,13 @@ See [`ETHICS.md`](ETHICS.md) for detailed discussion.
 
 ---
 
+## Associated Resources
+
+- Research paper (PDF): [CogniViz: Interpretable, Sensor-Free Cognitive Load Inference for Adaptive Interfaces](https://drive.google.com/file/d/1gyHREp5Zg2THAiwjeFCNj-uo6E2Y0uj0/view?usp=sharing)
+- Browser-native study + adaptive UI system: [CogniViz-System](https://github.com/dyra-12/CogniViz-System) — browser-native data collection and adaptive interface framework that pairs high-resolution behavioral interaction telemetry with subjective workload assessment via NASA-TLX.
+
+---
+
 ## Repository Navigation
 
 This README provides a high-level overview for rapid review.
